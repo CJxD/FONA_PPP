@@ -20,6 +20,7 @@ ABORT           "+CGATT: 0"
 
 ""              AT
 TIMEOUT         2
+# expect OK - otherwise send +++ without a newline and then expect OK
 OK-+++\c-OK     ATH
 OK              ATE1
 
