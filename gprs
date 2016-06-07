@@ -19,8 +19,9 @@ ABORT           "ERROR"
 ABORT           "+CGATT: 0"
 
 ""              AT
-TIMEOUT         12
-OK              ATH
+TIMEOUT         2
+# expect OK - otherwise send +++ without a newline and then expect OK
+OK-+++\c-OK     ATH
 OK              ATE1
 
 # +CPIN provides the SIM card PIN
