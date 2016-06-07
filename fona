@@ -34,3 +34,6 @@ nocrtscts
 
 # No modem control lines with FONA.
 local
+
+# Reduce the time between retries
+holdoff 3
